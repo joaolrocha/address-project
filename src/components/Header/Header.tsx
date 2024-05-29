@@ -14,7 +14,6 @@ const Header = ({ tittle }: HeaderProps) => {
       <div className='header-container-title'>
         {tittle}
       </div>
-
     </div>
   )
 }

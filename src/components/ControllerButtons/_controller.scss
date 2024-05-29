@@ -1,0 +1,66 @@
+.controller-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  padding: 1rem;
+
+  &-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d9d9d9;
+    padding: 0.5rem;
+    border-radius: 10px;
+
+  }
+
+  & button {
+    background-color: #d9d9d9;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 10px;
+
+    &:hover {
+      background-color: #bfbfbf;
+    }
+
+    &.selected {
+      background-color: #fff;
+    }
+  }
+
+  // Mobile
+  @media (max-width: 600px) {
+    // flex-direction: column;
+    gap: 0.5rem;
+
+    button {
+      width: 100%;
+    }
+  }
+
+  // Tablet
+  @media (min-width: 601px) and (max-width: 1024px) {
+    flex-direction: row;
+    gap: 0.75rem;
+
+    button {
+      width: auto;
+    }
+  }
+
+  // Desktop
+  @media (min-width: 1025px) {
+    flex-direction: row;
+    gap: 1rem;
+
+    button {
+      width: auto;
+    }
+  }
+}
