@@ -1,4 +1,4 @@
-import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import './_header.scss';
 import { HeaderProps } from './useHeader';
 
@@ -8,7 +8,7 @@ const Header = ({ tittle }: HeaderProps) => {
   return (
     <div className='header-container'>
       <div className='header-container-icon'>
-        <ArrowBackIcon />
+        <ArrowBackIosNewIcon style={{width: '20px', height: '20px'}}/>
       </div>
 
       <div className='header-container-title'>
