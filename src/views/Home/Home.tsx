@@ -1,5 +1,6 @@
 import ControllerButtons from "../../components/ControllerButtons/ControllerButtons"
 import Header from "../../components/Header/Header"
+import SearchAddress from "../../components/SearchAddress/SearchAddress"
 
 const HomePage = () => {
   return (
@@ -12,6 +13,10 @@ const HomePage = () => {
       
       <div className="homepage-container-controller">
         <ControllerButtons />
+      </div>
+
+      <div className="homepage-container-search">
+        <SearchAddress/>
       </div>
     </div>
   )

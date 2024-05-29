@@ -1,0 +1,76 @@
+.search-address-container {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+  width: 100%;
+
+  &-textfield {
+    width: 70%;
+  }
+
+  &-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+
+    & button {
+      border: none;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      border-radius: 10px;
+      background-color: #fff;
+      color: #542BF0;
+      border: 1px solid #542BF0;
+    }
+  }
+
+  // Mobile
+  @media (max-width: 600px) {
+    flex-direction: column;
+    align-items: stretch;
+
+    &-textfield,
+    &-button {
+      width: 100%;
+    }
+
+    &-button {
+      & button {
+        width: 100%;
+      }
+    }
+  }
+
+  // Tablet
+  @media (min-width: 601px) and (max-width: 1024px) {
+    &-textfield {
+      width: 65%;
+    }
+
+    &-button {
+      width: 35%;
+
+      & button {
+        width: 100%;
+      }
+    }
+  }
+
+  // Desktop
+  @media (min-width: 1025px) {
+    &-textfield {
+      width: 70%;
+    }
+
+    &-button {
+      width: 30%;
+
+      & button {
+        width: 100%;
+      }
+    }
+  }
+}
